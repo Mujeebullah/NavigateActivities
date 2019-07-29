@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             //startActivity(Intent.createChooser(intent, "Share with:"))
         }
+
+        btnRecyclerViewDemo.setOnClickListener {
+            var intent = Intent(this, HobbiesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

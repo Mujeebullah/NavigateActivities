@@ -32,5 +32,12 @@
             android:text="Share to other app"
     />
 
+    <Button
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRecyclerViewDemo"
+            android:text="Recycler View Demo"
+    />
+
 </LinearLayout>
 
