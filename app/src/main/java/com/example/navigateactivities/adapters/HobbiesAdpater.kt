@@ -1,4 +1,4 @@
-package com.example.navigateactivities
+package com.example.navigateactivities.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -7,12 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.navigateactivities.models.Hobby
+import com.example.navigateactivities.R
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class HobbiesAdpater(var context: Context, var hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdpater.MyViewHolder>(){
+class HobbiesAdpater(var context: Context, private var hobbies: List<Hobby>) :
+    RecyclerView.Adapter<HobbiesAdpater.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        var view =  LayoutInflater.from(context).inflate(R.layout.list_item, parent, false)
+        var view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false)
         return MyViewHolder(view)
 
     }
@@ -28,10 +31,11 @@ class HobbiesAdpater(var context: Context, var hobbies: List<Hobby>) : RecyclerV
 
     }
 
-    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var currentHobby: Hobby? = null
-        var currentPosition : Int? = null
-        init{
+        var currentPosition: Int? = null
+
+        init {
             itemView.setOnClickListener {
                 Toast.makeText(context, "${currentHobby!!.title} is clicked", Toast.LENGTH_SHORT).show()
             }
@@ -44,9 +48,10 @@ class HobbiesAdpater(var context: Context, var hobbies: List<Hobby>) : RecyclerV
                 context.startActivity(Intent.createChooser(intent, "Share with chooser"))
             }
         }
-        fun setData(hobby: Hobby?, position: Int){
+
+        fun setData(hobby: Hobby?, position: Int) {
             itemView.titleView.text = hobby!!.title
-            currentHobby = hobby;
+            currentHobby = hobby
             currentPosition = position
         }
     }
