@@ -15,7 +15,7 @@ class SecondActivity : AppCompatActivity(){
         var bundle: Bundle? = intent.extras
         var message = bundle!!.getString(Constants.USER_MESSAGE_KEY)
         showToast(message!!)
-        showToast("This is demo of extension functins")
+        showToast(resources.getString(R.string.demo_extension_functions))
 
     }
 }

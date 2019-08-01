@@ -22,21 +22,21 @@
             android:layout_width="359dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnSecondActivity"
-            android:text="Send data to next activity"
+            android:text="@string/btn_next_activity"
     />
 
     <Button
             android:layout_width="359dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnSharToOtherApp"
-            android:text="Share to other app"
+            android:text="@string/btn_share_app"
     />
 
     <Button
             android:layout_width="359dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnRecyclerViewDemo"
-            android:text="Recycler View Demo"
+            android:text="@string/btn_recycler_view"
     />
 
 </LinearLayout>

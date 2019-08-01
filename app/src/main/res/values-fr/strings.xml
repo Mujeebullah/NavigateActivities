@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_next_activity">Envoyer les données à l\'activité suivante</string>
+    <string name="btn_share_app">Partager avec une autre application</string>
+    <string name="btn_recycler_view">Recycler Voir la démo</string>
+    <string name="btn_first_activity">Première activité</string>
+    <string name="text_second_activity">Deuxième activité</string>
+    <string name="demo_extension_functions">Ceci est une démo de la fonction d\'extension</string>
+</resources>

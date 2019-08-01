@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">NavigateActivities</string>
+    <string name="app_name" translatable="false">NavigateActivities</string>
+    <string name="btn_next_activity">Send data to next activity</string>
+    <string name="btn_share_app">Share to other app</string>
+    <string name="btn_recycler_view">Recycler View Demo</string>
+    <string name="btn_first_activity">First Activity</string>
+    <string name="text_second_activity">Second Activity</string>
+    <string name="demo_extension_functions">This is demo of extension function</string>
 </resources>
